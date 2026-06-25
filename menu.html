@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Carte | Le Karité Doré</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="logo-symbole">☀</span> Le Karité Doré
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="specialites.html">Spécialités</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="reservation.html">Réservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1 class="section-title">Notre Carte</h1>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Toute la carte</button>
+            <button class="filter-btn" data-filter="entrees">Entrées</button>
+            <button class="filter-btn" data-filter="plats">Plats Traditionnels</button>
+            <button class="filter-btn" data-filter="desserts">Douceurs</button>
+        </div>
+
+        <div class="menu-grid">
+            
+            <div class="menu-card" data-category="entrees">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1626804475297-41609ea004eb?auto=format&fit=crop&q=80" alt="Pastels">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Pastels croustillants</h3>
+                    <p class="card-desc">Petits beignets farcis au poisson, accompagnés d'une sauce piquante douce.</p>
+                    <span class="card-price">9 €</span>
+                    <p class="hover-desc">Recette traditionnelle fait maison.</p>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="plats">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&q=80" alt="Ndolé">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Ndolé Royal</h3>
+                    <p class="card-desc">Feuilles amères de Ndolé mijotées, pâte d'arachides, viande et crevettes.</p>
+                    <span class="card-price">24 €</span>
+                    <p class="hover-desc">Le joyau de notre chef.</p>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="plats">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&q=80" alt="Poulet DG">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Poulet DG</h3>
+                    <p class="card-desc">Mijoté de poulet fermier, bananes plantains frites et petits légumes croquants.</p>
+                    <span class="card-price">22 €</span>
+                    <p class="hover-desc">Gourmand et généreux.</p>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=80" alt="Dessert">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Douceur Coco-Mangue</h3>
+                    <p class="card-desc">Crème onctueuse infusée au lait de coco et son coulis de mangue fraîche.</p>
+                    <span class="card-price">10 €</span>
+                    <p class="hover-desc">La note finale parfaite.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Projet Étudiant - Le Karité Doré.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

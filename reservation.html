@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver une Table | Le Karité Doré</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="logo-symbole">☀</span> Le Karité Doré
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="specialites.html">Spécialités</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="reservation.html" class="active">Réservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="popup-msg" class="popup">
+        ✦ Votre demande de réservation a été validée avec succès !
+    </div>
+
+    <section>
+        <h1 class="section-title">Nous Rejoindre</h1>
+        
+        <div class="reservation-container">
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" class="form-control" required placeholder="Ex: Fatou Touré">
+                </div>
+                
+                <div class="form-group">
+                    <label for="tel">Numéro de téléphone</label>
+                    <input type="tel" id="tel" class="form-control" required placeholder="06 XX XX XX XX">
+                </div>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div class="form-group" style="flex: 1; min-width: 120px;">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" class="form-control" required>
+                    </div>
+                    <div class="form-group" style="flex: 1; min-width: 120px;">
+                        <label for="heure">Heure</label>
+                        <input type="time" id="heure" class="form-control" required>
+                    </div>
+                    <div class="form-group" style="flex: 1; min-width: 120px;">
+                        <label for="convives">Convives</label>
+                        <input type="number" id="convives" class="form-control" min="1" max="12" placeholder="2" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="note">Note ou demande particulière</label>
+                    <textarea id="note" class="form-control" rows="3" placeholder="Allergies, anniversaire, emplacement souhaité..."></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Confirmer ma Table</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Projet Étudiant - Le Karité Doré.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
